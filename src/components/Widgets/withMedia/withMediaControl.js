@@ -55,13 +55,13 @@ export default function withMediaControl(forImage) {
       }
     }
 
-    handleChange = (e) => {
+    handleChange = e => {
       const { field, onOpenMediaLibrary} = this.props;
       e.preventDefault();
       return onOpenMediaLibrary({ controlID: this.controlID, forImage, privateUpload: field.private });
     };
 
-    handleRemove = () => {
+    handleRemove = e => {
       e.preventDefault();
       return this.props.onChange('');
     };
