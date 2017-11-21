@@ -5,6 +5,7 @@ import { AppContainer } from 'react-hot-loader';
 import 'normalize.css';
 import Root from './root';
 import registry from './lib/registry';
+import './EditorWidgets';
 import './index.css';
 
 // Log the version number
